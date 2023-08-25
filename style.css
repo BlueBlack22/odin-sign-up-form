@@ -112,12 +112,16 @@ label {
 input {
     width: 15vw;
     height: 3vh;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 5px;
 }
 
 input:focus {
-    border: 1px solid black;
+    border: 3px solid blue;
+}
+
+input:invalid {
+    border: 3px solid red;
 }
 
 .lower-text {
@@ -136,4 +140,25 @@ button {
     color: white;
     font-size: 15px;
     font-weight: 600;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.background-link {
+    color: white;
+}
+
+.background-link:visited {
+    color: white;
+}
+
+.log-in-link {
+    color: #596D48;
+    text-decoration: none;
+}
+
+.log-in-link:visited {
+    color: #596D48;
 }

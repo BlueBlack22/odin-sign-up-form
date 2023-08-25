@@ -14,16 +14,16 @@
                     <p id="logo-text">ODIN</p>
                 </div>
             </div>
-        <p id="pic-credits">Photo by Halie West on Unsplash</p>
+        <p id="pic-credits">Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA" class="background-link">Unsplash</a></p>
     </div>
 
     <div class="content">
         <div class="upper-text">
             <p>This is not a real online service! You know you need something like
                 this in your life to help you realize your deepest dreams. <br>
-                Sign up now to get started.
+                Sign up <span class="italic">now</span> to get started.
             </p>
-            <p>You know you want</p>
+            <p>You <span class="italic">know</span> you want to.</p>
         </div>
 
         <div class="form-box">
@@ -33,29 +33,29 @@
                     <div>
                         <div class="input">
                             <label for="first_name">FIRST NAME</label>
-                            <input type="text" id="first_name">
+                            <input type="text" id="first_name" required>
                         </div>
                         <div class="input">
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email">
+                            <input type="email" id="email" required>
                         </div>
                         <div class="input">
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password">
+                            <input type="password" id="password" onchange="check_password()" required>
                         </div>
                     </div>
                     <div>
                         <div class="input">
                             <label for="last_name">LAST NAME</label>
-                            <input type="text" id="last_name">
+                            <input type="text" id="last_name" required>
                         </div>
                         <div class="input">
                             <label for="phone_number">PHONE NUMBER</label>
-                            <input type="number" id="phone_number">
+                            <input type="number" id="phone_number" required>
                         </div>
                         <div class="input">
                             <label for="confirm_password">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm_password">
+                            <input type="password" id="confirm_password"  onchange="check_password()" required>
                         </div>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
 
         <div class="lower-text">
             <button type="submit" form="sign-up-form">Create Account</button>
-            <p>Already have an account? Log in</p>
+            <p>Already have an account? <a href="#" class="log-in-link">Log in</a></p>
         </div>
     </div>
 </body>
